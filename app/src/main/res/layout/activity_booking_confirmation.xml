@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.abcexample.parkapp.BookingConfirmationActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <TextView
+            android:id="@+id/textViewSuccess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:text="Your Slot/Slots are Successfully Booked"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="#ffc300"
+            android:textSize="25sp"
+            android:typeface="monospace"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="10dp" />
+
+        <TextView
+            android:id="@+id/numberofslotsbooked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewSuccess"
+            android:layout_margin="5dp"
+            android:background="#000000"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="No of Slots Booked"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large.Inverse"
+            android:textColor="#ffffff"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="149dp" />
+
+
+        <ImageView
+            android:id="@+id/categoryimageview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/numberofslotsbooked"
+            android:layout_margin="5dp"
+            app:srcCompat="@drawable/placeholder"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="214dp" />
+
+        <TextView
+            android:id="@+id/confirmcategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/categoryimageview"
+            android:layout_margin="5dp"
+            android:background="#ffc300"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="Category"
+            android:textColor="#000000"
+            android:textSize="35sp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="450dp" />
+
+        <TextView
+            android:id="@+id/confirmaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/confirmcategory"
+            android:layout_margin="5dp"
+            android:background="#000000"
+            android:fontFamily="monospace"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="Category Address"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="505dp" />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

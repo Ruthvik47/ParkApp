@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.abcexample.parkapp.Cancel_Confirmation_Activity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+   <LinearLayout
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:gravity="center"
+       tools:layout_constraintTop_creator="1"
+       tools:layout_constraintRight_creator="1"
+       app:layout_constraintRight_toRightOf="parent"
+       tools:layout_constraintLeft_creator="1"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintTop_toTopOf="parent">
+
+       <TextView
+
+           android:id="@+id/cancelconfirmationtextview"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:foregroundGravity="center"
+           android:gravity="center"
+           android:paddingTop="30dp"
+           android:text="You are Successfully Cancelled your Booking"
+           android:textAlignment="center"
+           android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+           android:textColor="#ffffff"
+           android:textSize="30sp" />
+
+       <Button
+           android:id="@+id/gotohomebutton"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/cancelconfirmationtextview"
+           android:layout_gravity="center_vertical"
+           android:layout_margin="30dp"
+           android:background="#ffc300"
+           android:gravity="center"
+           android:text="Go to Home"
+           android:textAllCaps="true"
+           android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+           tools:ignore="ObsoleteLayoutParam" />
+   </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

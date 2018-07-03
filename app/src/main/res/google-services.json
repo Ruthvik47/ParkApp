@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1049680656284",
+    "firebase_url": "https://parkapp-3d523.firebaseio.com",
+    "project_id": "parkapp-3d523",
+    "storage_bucket": "parkapp-3d523.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1049680656284:android:20784b5dab3aa8b6",
+        "android_client_info": {
+          "package_name": "com.abcexample.parkapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1049680656284-tahqcjl60qri4l8qrdeho3j7ueu5jltg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgqkHopU-0dVNt0yFSBHG09S-Q-oZvWL8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

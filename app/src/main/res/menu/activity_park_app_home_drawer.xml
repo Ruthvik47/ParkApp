@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_Malls"
+            android:icon="@drawable/ic_store_mall_directory_black_24dp"
+            android:title="Malls" />
+        <item
+            android:id="@+id/nav_stadiums"
+            android:icon="@drawable/ic_lens_black_24dp"
+            android:title="Stadiums" />
+        <item
+            android:id="@+id/nav_Theatres"
+            android:icon="@drawable/ic_theaters_black_24dp"
+            android:title="Theatres" />
+        <item
+            android:id="@+id/nav_Stations"
+            android:icon="@drawable/ic_directions_railway_black_24dp"
+            android:title="Stations" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

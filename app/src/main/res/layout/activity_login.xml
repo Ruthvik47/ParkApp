@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="false"
+    android:layout_centerInParent="false"
+    android:layout_centerVertical="true"
+    android:background="@drawable/backfround_image"
+    tools:context="com.abcexample.parkapp.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/Linearlayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <TextView
+            android:id="@+id/LoginHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="monospace"
+            android:padding="5dp"
+            android:text="@string/user_login"
+            android:textAlignment="center"
+            android:textColor="#ffc300"
+            android:textIsSelectable="false"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="175dp"
+            tools:layout_editor_absoluteY="175dp" />
+
+        <EditText
+            android:id="@+id/editTextemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:ems="10"
+            android:hint="@string/enter_email"
+            android:inputType="textEmailAddress"
+            android:padding="5dp"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="229dp" />
+
+        <EditText
+            android:id="@+id/editTextpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:ems="10"
+            android:hint="@string/enter_password"
+            android:inputType="textPassword"
+            android:padding="5dp"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="290dp" />
+
+        <Button
+            android:id="@+id/Loginbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="#ffc300"
+            android:fontFamily="monospace"
+            android:padding="5dp"
+            android:text="@string/login_signin"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="369dp" />
+
+        <TextView
+            android:id="@+id/textviewRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center_horizontal|clip_horizontal"
+            android:padding="5dp"
+            android:text="@string/register_signup"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

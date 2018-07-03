@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.abcexample.parkapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_navigation"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ParkAppHomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity
+            android:name=".MallActivity"
+            android:label="Malls"
+            android:parentActivityName=".ParkAppHomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.abcexample.parkapp.ParkAppHomeActivity" />
+        </activity>
+        <activity
+            android:name=".StadiumActivity"
+            android:label="Stadiums"
+            android:parentActivityName=".ParkAppHomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.abcexample.parkapp.ParkAppHomeActivity" />
+        </activity>
+        <activity
+            android:name=".TheathreActivity"
+            android:label="Theatres"
+            android:parentActivityName=".ParkAppHomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.abcexample.parkapp.ParkAppHomeActivity" />
+        </activity>
+        <activity
+            android:name=".StationActivity"
+            android:label="Stations"
+            android:parentActivityName=".ParkAppHomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.abcexample.parkapp.ParkAppHomeActivity" />
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="Update Settings"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity
+            android:name=".MyAccount"
+            android:label="My Account"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity
+            android:name=".SelectionActivity"
+            android:label="Select Category"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity
+            android:name=".SlotsNumberActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity
+            android:name=".BookingConfirmationActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+
+        <service
+            android:name=".TimerService"
+            android:exported="false" />
+
+        <activity
+            android:name=".CurrentBookingsActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+
+        <activity
+            android:name=".EmptyActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+
+        <activity
+            android:name=".FirstScreenActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Cancel_Confirmation_Activity"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"/>
+
+    </application>
+
+</manifest>

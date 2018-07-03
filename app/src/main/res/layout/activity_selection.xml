@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.abcexample.parkapp.SelectionActivity">
+
+    <ImageView
+        android:id="@+id/twowheelerimageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/TwoWheelerslefttextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/placeholder"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <TextView
+        android:id="@+id/TwoWheelerslefttextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/twowheelerimageView"
+        android:background="#080707"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="No.of Slots Left:"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/TwoWheelerBookButton"
+        app:layout_constraintLeft_toLeftOf="@+id/TwoWheelerBookButton"
+        app:layout_constraintRight_toRightOf="@+id/TwoWheelerBookButton"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <Button
+        android:id="@+id/TwoWheelerBookButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#ffc300"
+        android:text="Book Now"
+        android:textAllCaps="true"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="#080707"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/FourWhelerimageView"
+        app:layout_constraintRight_toRightOf="@+id/FourWhelerimageView"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/FourWhelerimageView" />
+
+    <ImageView
+        android:id="@+id/FourWhelerimageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/FourWheelersLefttextView"
+        app:layout_constraintLeft_toLeftOf="@+id/FourWheelersLefttextView"
+        app:layout_constraintRight_toRightOf="@+id/FourWheelersLefttextView"
+        app:srcCompat="@drawable/placeholder2"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <TextView
+        android:id="@+id/FourWheelersLefttextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#080707"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="No.of Slots Left:"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/FourWheelerBookButton"
+        app:layout_constraintLeft_toLeftOf="@+id/FourWheelerBookButton"
+        app:layout_constraintRight_toRightOf="@+id/FourWheelerBookButton"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <Button
+        android:id="@+id/FourWheelerBookButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:background="#ffc300"
+        android:text="Book Now"
+        android:textAllCaps="true"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="#080707"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+</android.support.constraint.ConstraintLayout>

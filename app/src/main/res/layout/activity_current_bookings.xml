@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="30dp"
+    android:paddingBottom="30dp"
+    android:background="@drawable/backfround_image"
+    tools:context="com.abcexample.parkapp.CurrentBookingsActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal|center"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center|center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/numberofslotsbooked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewSuccess"
+            android:layout_margin="5dp"
+            android:background="#000000"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="No of Slots Booked"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large.Inverse"
+            android:textColor="#ffffff"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="149dp" />
+
+        <ImageView
+            android:id="@+id/categoryimageview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/numberofslotsbooked"
+            android:layout_margin="5dp"
+            app:srcCompat="@drawable/placeholder"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="214dp" />
+
+        <TextView
+            android:id="@+id/confirmcategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/categoryimageview"
+            android:layout_margin="5dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="Category"
+            android:textColor="#ffffff"
+            android:textSize="35sp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="450dp" />
+
+        <TextView
+            android:id="@+id/confirmaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/confirmcategory"
+            android:layout_margin="5dp"
+            android:fontFamily="monospace"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="Category Address"
+            android:textColor="#ffc300"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="505dp" />
+
+        <Button
+            android:id="@+id/CancelButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:background="#ffc300"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:layout_below="@id/confirmaddress"/>
+
+        <Button
+            android:id="@+id/Refreshbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REFRESH"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:background="#000000"
+            android:layout_below="@id/CancelButton"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="469dp" />
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
